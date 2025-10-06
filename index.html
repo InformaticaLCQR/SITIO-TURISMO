@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turismo Municipio de Lázaro Cárdenas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+  <!-- Banner de portada -->
+  <div class="banner">
+  <div class="contenedor-izquierda">
+    <img src="images/blanco.png" alt="Imagen holbox">
+    <p class="texto-holbox">Lázaro Cárdenas</p>
+  </div>
+  <div class="logo"></div>
+</div>
+<div class="contenedor-centro">
+    <p class="texto-bienvenido">Bienvenidos</p>
+    <p class="texto-center">a nuestro municipio, le deseamos una excelente estadía.</p>
+  </div>
+
+  <!-- Menú de navegación -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+<nav class="navbar">
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="#">Mapa</a></li>
+    <li><a href="#">¿Qué hacer?</a></li>
+    <li><a href="#">Hospedaje</a></li>
+    <li><a href="#">Gastronomía</a></li>
+    <li><a href="#">Transporte</a></li>
+    <li><a href="#">Tour operadores</a></li>
+    <li><a href="#">Holbox</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Contenido -->
+  <main>
+    <h1 class="titulo_galería">Galería de Lázaro Cárdenas.</h1>
+    <grid>
+  <img src="images/galeria1.jpg" alt="Imagen 1">
+  <img src="images/galeria2.jpg" alt="Imagen 2">
+  <img src="images/galeria33.webp" alt="Imagen 3">
+  <img src="" alt="Imagen 4">
+  <img src="" alt="Imagen 5">
+  <img src="" alt="Imagen 6">
+  <img src="" alt="Imagen 7">
+  <img src="" alt="Imagen 8">
+  <img src="" alt="Imagen 9">
+  <img src="" alt="Imagen 10">
+  <img src="" alt="Imagen 11">
+  <img src="" alt="Imagen 12">
+</grid>
+
+  </main>
+
+</body>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    const toggle = document.querySelector(".menu-toggle");
+
+    nav.classList.toggle("show");
+    toggle.classList.toggle("active");
+  }
+</script>
+
+</html>
